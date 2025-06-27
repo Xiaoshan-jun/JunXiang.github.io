@@ -61,7 +61,14 @@
                  width="100%"
                  onmouseover="r2r_start()"
                  onmouseout="r2r_stop()"
-                 alt="RRT* Animation Preview">
+                 alt="RRT* Animation Preview"
+                 style="
+                   width: 100%;
+                   max-width: 320px;            /* set based on actual image width */
+                   height: auto;
+                   image-rendering: pixelated;  /* prevent blur during scaling */
+                   display: block;">
+
           </div>
 
           <script type="text/javascript">
