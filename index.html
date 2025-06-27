@@ -54,37 +54,36 @@
 
 
     <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
-        <td style="padding:16px;width:50%;vertical-align:middle">
-          <div class="one">
-            <img id="r2r_img"
-                 src="images/rrt_star_final_frame_RL1.png"
-                 width="100%"
-                 onmouseover="r2r_start()"
-                 onmouseout="r2r_stop()"
-                 alt="RRT* Animation Preview"
-                 style="
-                   width: 100%;
-                   max-width: 320px;            /* set based on actual image width */
-                   height: auto;
-                   image-rendering: pixelated;  /* prevent blur during scaling */
-                   display: block;">
+            <td style="padding:16px;width:100%;vertical-align:middle">
+  <div class="one" style="text-align: center;">
+    <img id="r2r_img"
+         src="images/rrt_star_final_frame_RL1.png"
+         alt="RRT* Animation Preview"
+         onmouseover="r2r_start()"
+         onmouseout="r2r_stop()"
+         style="
+           width: 800px;         /* Display width */
+           max-width: 100%;
+           height: auto;
+           display: block;
+           margin: 0 auto;
+         ">
+  </div>
 
-          </div>
+  <script type="text/javascript">
+    function r2r_start() {
+      document.getElementById('r2r_img').src = 'images/rrt_star_episode_1.gif';
+    }
 
-          <script type="text/javascript">
-            function r2r_start() {
-              document.getElementById('r2r_img').src = 'images/rrt_star_episode_1.gif';
-            }
+    function r2r_stop() {
+      document.getElementById('r2r_img').src = 'images/rrt_star_final_frame_RL1.png';
+    }
 
-            function r2r_stop() {
-              document.getElementById('r2r_img').src = 'images/rrt_star_final_frame_RL1.png';
-            }
-
-            // Preload GIF to reduce hover delay
-            const preloadGif = new Image();
-            preloadGif.src = 'images/rrt_star_episode_1.gif';
-          </script>
-        </td>
+    // Preload the GIF to avoid delay
+    const preloadGif = new Image();
+    preloadGif.src = 'images/rrt_star_episode_1.gif';
+  </script>
+</td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://relight-to-reconstruct.github.io/">
           <span class="papertitle">Generative Multiview Relighting for
