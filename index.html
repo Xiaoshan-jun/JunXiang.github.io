@@ -170,7 +170,12 @@
               <p>Adaptive multiscale A* algorithm, more efficient and robust.</p>
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
-              <img src="images/output_video.gif" alt="Hybrid multiscale search" style="max-width:100%; height:auto;">
+              <img id="output_img" src="images/output_video.gif" alt="Hybrid multiscale search" style="max-width:100%; height:auto;">
+                     <script type="text/javascript">
+                function rrt_start() { document.getElementById('output_img').src = 'images/output_video.gif'; }
+                function rrt_stop() { document.getElementById('output_img').src = 'images/output_video.gif'; }
+                (function() { var img = new Image(); img.src = 'images/output_video.gif'; })();
+              </script>
             </td></tr>
           </tbody></table>
 
@@ -190,7 +195,12 @@
               <p>Introduce multiscale A* and dynamic traffic-volume reservation to increase airspace usage efficiency. We allocate more search resources to important or high-risk areas and fewer resources to unrelated or low-risk areas.</p>
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
-              <img src="images/multi.gif" alt="Dynamic UAS traffic" style="max-width:100%; height:auto;">
+              <img id="multi_img" src="images/multi.gif" alt="Dynamic UAS traffic" style="max-width:100%; height:auto;">
+                     <script type="text/javascript">
+                function rrt_start() { document.getElementById('output_img').src = 'images/multi.gif'; }
+                function rrt_stop() { document.getElementById('output_img').src = 'images/multi.png'; }
+                (function() { var img = new Image(); img.src = 'images/multi.gif'; })();
+              </script>
             </td></tr>
           </tbody></table>
 
