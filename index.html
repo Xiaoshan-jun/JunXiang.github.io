@@ -56,19 +56,24 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr><td style="padding:16px;vertical-align:middle">
               <a href="https://relight-to-reconstruct.github.io/">
-                <span class="papertitle">Intention-Guided Airport Surface Trajectory Forecasting Using a Vision Language Model</span>
+                <span class="papertitle">Certified Almost Lyapunov-stable Reinforcement Learning Controller for High-Dimensional Dynamic System.</span>
               </a>
               <br>
-              <strong>Jun Xiang</strong>, Xuewei Chen, Jun Chen
+              <strong>Jun Xiang</strong>, Sonia Martinez, Jun Chen
               <br>
-              <em>SCITECH</em>, 2026
+              <em>submitted to journal</em>, 2026
               <br>
               <a href="https://relight-to-reconstruct.github.io/">project page</a> /
               <a href="https://arc.aiaa.org/eprint/BVIKIZ24J2PJ4CJINI3J/full/10.2514/6.2025-3518">paper</a>
-              <p>Use VLM-based scene understanding and intention classification to improve trajectory prediction.</p>
+              <p> A hierarchical Lyapunov stable controller, which is easier to be trained by reinforcement learning. Able to save quadrotor in almost any state.  </p>
             </td></tr>
-            <tr><td style="padding:16px;text-align:center;">
-              <img src="images/klax_all_goals_classified.png" alt="VLM trajectory prediction" style="max-width:100%; height:auto;">
+            <tr onmouseout="rrt_stop()" onmouseover="rrt_start()"><td style="padding:16px;text-align:center;">
+              <img id="sac_img" src="images/quadrotor2d_pitch_sac_1.gif" alt="RRT* Animation Preview" style="max-width:100%; height:auto;">
+              <script type="text/javascript">
+                function rrt_start() { document.getElementById('sac_img').src = 'images/images/quadrotor2d_pitch_sac_1.gif'; }
+                function rrt_stop() { document.getElementById('sac_img').src = 'images/images/quadrotor2d_pitch_sac_1.gif'; }
+                (function() { var img = new Image(); img.src = 'images/rrt_star_episode_1.gif'; })();
+              </script>
             </td></tr>
           </tbody></table>
 
@@ -94,6 +99,9 @@
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
               <img src="images/klax_all_goals_classified.png" alt="Airport trajectory prediction" style="max-width:100%; height:auto;">
+            </td></tr>
+                      <tr><td style="padding:16px;text-align:center;">
+              <img src="images/prediction.png" alt="Airport trajectory prediction" style="max-width:100%; height:auto;">
             </td></tr>
           </tbody></table>
 
@@ -138,9 +146,7 @@
               <p>Adaptive multiscale A* algorithm, more efficient and robust.</p>
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
-              <video autoplay loop muted playsinline style="max-width:100%; height:auto;">
-                <source src="images/output_video.mp4" type="video/mp4">
-              </video>
+              <img src="images/output_video.gif" alt="Hybrid multiscale search" style="max-width:100%; height:auto;">
             </td></tr>
           </tbody></table>
 
@@ -160,9 +166,7 @@
               <p>Introduce multiscale A* and dynamic traffic-volume reservation to increase airspace usage efficiency. We allocate more search resources to important or high-risk areas and fewer resources to unrelated or low-risk areas.</p>
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
-              <video autoplay loop muted playsinline style="max-width:100%; height:auto;">
-                <source src="images/multi.mp4" type="video/mp4">
-              </video>
+              <img src="images/multi.gif" alt="Dynamic UAS traffic" style="max-width:100%; height:auto;">
             </td></tr>
           </tbody></table>
 
@@ -194,7 +198,7 @@
           <!-- Reachability analysis -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr><td style="padding:12px;width:100%;vertical-align:middle">
-              <h2>Reachability analysis</h2>
+              <h2>Uncertain obstacle analysis</h2>
             </td></tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -207,7 +211,7 @@
               <br>
               <a href="https://relight-to-reconstruct.github.io/">project page</a> /
               <a href="https://arxiv.org/abs/2411.14356">paper</a>
-              <p>Images taken under extreme illumination variation can be made consistent with diffusion, and this enables high-quality 3D reconstruction.</p>
+              <p>Construct probalbilstic environment based on limited sensor data </p>
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
               <img src="images/maskedExample.png" alt="Reachability analysis" style="max-width:100%; height:auto;">
