@@ -207,16 +207,14 @@
 
 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+    <tr onmouseout="rrt_stop()" onmouseover="rrt_start()">
             <td style="padding:16px;width:33%;vertical-align:middle">
   <div class="one" style="text-align: center;">
-    <img id="r2r_img"
+    <img id="rrt_img"
          src="images/rrt_star_final_frame_RL1.png"
          alt="RRT* Animation Preview"
-         onmouseover="r2r_start()"
-         onmouseout="r2r_stop()"
          style="
-           width: 800px;         /* Display width */
+           width: 800px;
            max-width: 100%;
            height: auto;
            display: block;
@@ -225,17 +223,13 @@
   </div>
 
   <script type="text/javascript">
-    function r2r_start() {
-      document.getElementById('r2r_img').src = 'images/rrt_star_episode_1.gif';
+    function rrt_start() {
+      document.getElementById('rrt_img').src = 'images/rrt_star_episode_1.gif';
     }
-
-    function r2r_stop() {
-      document.getElementById('r2r_img').src = 'images/rrt_star_final_frame_RL1.png';
+    function rrt_stop() {
+      document.getElementById('rrt_img').src = 'images/rrt_star_final_frame_RL1.png';
     }
-
-    // Preload the GIF to avoid delay
-    const preloadGif = new Image();
-    preloadGif.src = 'images/rrt_star_episode_1.gif';
+    (function() { var img = new Image(); img.src = 'images/rrt_star_episode_1.gif'; })();
   </script>
 </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
