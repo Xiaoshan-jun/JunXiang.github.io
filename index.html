@@ -76,6 +76,30 @@
               </script>
             </td></tr>
           </tbody></table>
+          body></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr><td style="padding:16px;vertical-align:middle">
+              <a href="https://relight-to-reconstruct.github.io/">
+                <span class="papertitle">Comfort improvement for autonomous vehicles using reinforcement learning with in-situ human feedback</span>
+              </a>
+              <br>
+              <strong>Jun Xiang</strong>, Longxiang Guo
+              <br>
+              <em>WCX SAE World Congress Experience</em>, 2022
+              <br>
+              <a href="https://relight-to-reconstruct.github.io/">project page</a> /
+              <a href="https://arc.aiaa.org/eprint/BVIKIZ24J2PJ4CJINI3J/full/10.2514/6.2025-3518">paper</a>
+              <p> A collision free guaranteed reinforcement learning autonomous vehicle car following strategy   </p>
+            </td></tr>
+            <tr onmouseout="rrt_stop()" onmouseover="rrt_start()"><td style="padding:16px;text-align:center;">
+              <img id="av" src="images/av.gif" alt="RRT* Animation Preview" style="max-width:100%; height:auto;">
+              <script type="text/javascript">
+                function rrt_start() { document.getElementById('av').src = 'images/images/av.gif'; }
+                function rrt_stop() { document.getElementById('av').src = 'images/images/av.gif'; }
+                (function() { var img = new Image(); img.src = 'images/av.gif'; })();
+              </script>
+            </td></tr>
+          </tbody></table>
 
           <!-- Aircraft trajectory prediction -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -146,7 +170,9 @@
               <p>Adaptive multiscale A* algorithm, more efficient and robust.</p>
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
-              <img src="images/output_video.gif" alt="Hybrid multiscale search" style="max-width:100%; height:auto;">
+              <video autoplay loop muted playsinline style="max-width:100%; height:auto;">
+                <source src="images/output_video.mp4" type="video/mp4">
+              </video>
             </td></tr>
           </tbody></table>
 
@@ -166,7 +192,9 @@
               <p>Introduce multiscale A* and dynamic traffic-volume reservation to increase airspace usage efficiency. We allocate more search resources to important or high-risk areas and fewer resources to unrelated or low-risk areas.</p>
             </td></tr>
             <tr><td style="padding:16px;text-align:center;">
-              <img src="images/multi.gif" alt="Dynamic UAS traffic" style="max-width:100%; height:auto;">
+              <video autoplay loop muted playsinline style="max-width:100%; height:auto;">
+                <source src="images/multi.mp4" type="video/mp4">
+              </video>
             </td></tr>
           </tbody></table>
 
